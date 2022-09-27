@@ -15,9 +15,9 @@ public class Main {
             readText = readText + str;
         }
 
-        String sim = "Всего символов в тексте: " + readText.length();
-        String pr = "Всего символов в тексте без пробелов: " + readText.replaceAll(" ", "").length();
-        String sl = "Всего слов в тексте: " + readText.split(" ").length;
+        String sim = "Количество символов в тексте: " + readText.length();
+        String pr = "Количество символов в тексте без пробелов: " + readText.replaceAll(" ", "").length();
+        String sl = "Количество слов в тексте: " + readText.split(" ").length;
 
         System.out.println(sim);
         System.out.println(pr);
