@@ -15,18 +15,18 @@ public class Main {
             readText = readText + str;
         }
 
-        String sim = "Количество символов в тексте: " + readText.length();
-        String pr = "Количество символов в тексте без пробелов: " + readText.replaceAll(" ", "").length();
-        String sl = "Количество слов в тексте: " + readText.split(" ").length;
+        String simvol = "Количество символов в тексте: " + readText.length();
+        String space = "Количество символов в тексте без пробелов: " + readText.replaceAll(" ", "").length();
+        String slova = "Количество слов в тексте: " + readText.split(" ").length;
 
-        System.out.println(sim);
-        System.out.println(pr);
-        System.out.println(sl);
+        System.out.println(simvol);
+        System.out.println(space);
+        System.out.println(slova);
 
         FileWriter fileWriter = new FileWriter("output.txt");
-        fileWriter.write(sim);
-        fileWriter.write("\n" + pr);
-        fileWriter.write("\n" + sl);
+        fileWriter.write(simvol);
+        fileWriter.write("\n" + space);
+        fileWriter.write("\n" + slova);
         fileWriter.flush();
     }
 }
